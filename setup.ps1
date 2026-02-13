@@ -18,7 +18,7 @@ git submodule foreach --recursive 'git checkout $(git symbolic-ref refs/remotes/
 # Resume cwd
 Pop-Location
 
-Write-Host "Already update the git submodule\n" -ForegroundColor Green
+Write-Host "Already update the git submodule`n" -ForegroundColor Green
 
 # ---------- 2. Create config file link ----------
 Write-Host "========== Creating the link ==========" -ForegroundColor Cyan
