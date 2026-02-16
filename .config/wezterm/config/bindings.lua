@@ -15,6 +15,7 @@ end
 local keys = {
     -- Quit Application
     { key = 'q', mods = 'LEADER',      action = act.QuitApplication },
+    { key = 'q', mods = 'CMD',         action = act.QuitApplication },
 
     -- misc/useful --
     { key = "c", mods = "LEADER",      action = "ActivateCopyMode" },
@@ -29,10 +30,13 @@ local keys = {
     -- copy/paste --
     { key = "c", mods = "CTRL|SHIFT",  action = act.CopyTo("Clipboard") },
     { key = "v", mods = "CTRL|SHIFT",  action = act.PasteFrom("Clipboard") },
+    { key = "c", mods = "CMD",         action = act.CopyTo("Clipboard") },
+    { key = "v", mods = "CMD",         action = act.PasteFrom("Clipboard") },
 
     -- tabs --
     -- tabs: spawn+close
     { key = "t", mods = "CTRL",        action = act.SpawnTab("DefaultDomain") },
+    { key = "t", mods = "CMD",         action = act.SpawnTab("DefaultDomain") },
     { key = "t", mods = "CTRL|ALT",    action = act.SpawnTab({ DomainName = "WSL:archlinux" }) },
 
     { key = "w", mods = "CTRL|ALT",    action = act.CloseCurrentTab({ confirm = true }) },
