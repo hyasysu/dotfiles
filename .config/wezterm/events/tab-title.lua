@@ -49,9 +49,9 @@ M.set_title = function(tab_index, process_name, static_title, active_title, max_
     -- end
 
     if static_title:len() > 0 then
-        title = tostring(tab_index) .. ": " .. static_title .. " ~ " .. " "
+        title = tostring(tab_index + 1) .. ": " .. static_title .. " ~ " .. " "
     elseif process_name:len() > 0 then
-        title = tostring(tab_index) .. ": " .. process_name --  .. " ~ " .. " "
+        title = tostring(tab_index + 1) .. ": " .. process_name --  .. " ~ " .. " "
     end
 
     -- if title:len() > max_width - inset then
